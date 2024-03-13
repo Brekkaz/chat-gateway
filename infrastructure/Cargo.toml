@@ -1,0 +1,21 @@
+[package]
+name = "infrastructure"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+application = { path = "../application" }
+actix.workspace = true
+actix-web.workspace = true
+actix-web-actors.workspace = true
+anyhow.workspace = true
+domain = { path = "../domain" }
+dotenv.workspace = true
+env_logger.workspace = true
+log.workspace = true
+async-trait.workspace = true
+uuid.workspace = true
+rdkafka.workspace = true
+tokio.workspace = true

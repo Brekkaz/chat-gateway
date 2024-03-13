@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "application",
+    "domain",
+    "infrastructure"
+]
+
+[profile.dev]
+opt-level = 0
+
+[workspace.dependencies]
+actix = { version = "0.13.3", features = [] }
+actix-web = { version = "4.5.1", features = [] }
+actix-web-actors = { version = "4.3.0", features = [] }
+anyhow = "1.0.81"
+async-trait = "0.1.77"
+dotenv = "0.15.0"
+env_logger = "0.11.3"
+log = "0.4.21"
+rdkafka = { version = "0.36.2", features = ["cmake-build", "ssl", "sasl"] }
+strum_macros = "0.26.2"
+thiserror = "1.0.58"
+tokio = "1.36.0"
+uuid = { version = "1.7.0", features = ["v4"] }
